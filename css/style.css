@@ -1,54 +1,132 @@
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:14px 18px;
-  background:#111;
+
+
+
+/* Barre de navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #111;
 }
 
-.logo{
-  height:80px;
-  width:auto;
-  display:block;
+.logo {
+  height: 80px;
+  width: auto;
+  display: block;
 }
 
-.links{
-  display:flex;
-  gap:16px;
-  align-items:center;
+.links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
-.links a{
-  color:#fff;
-  text-decoration:none;
-  opacity:.9;
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: x-large;
 }
 
-.links a:hover{
-    color:#fde508;
-  opacity:1;
-  text-decoration:underline;
+.links a:hover {
+  color: #fde508;
+  text-decoration: underline;
 }
 
-.links2 a:hover{
-  opacity:1;
-  text-decoration:underline;
+.links2 a:hover {
+  text-decoration: underline;
 }
 
-.btn{
+.btn {
+  background: #fff;
+  color: #111 !important;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fde508;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f3f3f3;
+}
+
+/* Le main  */
+
+.main{
+  max-width:1100px;
+  margin:25px auto;
+  padding:0 18px;
+}
+
+/* Les sections  */
+
+.sections{
   background:#fff;
-  color:#111 !important;
-  padding:8px 12px;
-  border-radius:10px;
-  font-weight:600;
-  text-decoration:none;
+  border-radius:14px;
+  padding:22px;
+  margin-bottom:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.btn:hover{
-  background:#fde508;
-  color:#111 !important;
-  padding:8px 12px;
-  border-radius:10px;
-  font-weight:600;
-  text-decoration:none;
+.sections h1, .sections h2{
+  margin-top:0;
 }
+
+/* Avis */
+
+.avis{
+  display:flex;
+  gap:14px;
+}
+
+.avis-client{
+  flex:1;
+  background:#fff;
+  border-radius:12px;
+  padding:14px;
+}
+
+.avis-client p{
+  margin:0 0 10px;
+}
+
+.avis-client span{
+  font-weight:600;
+}
+
+/* Connexion */
+
+.button{
+  padding:12px 16px;
+  border-radius:10px;
+  background:#111;
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.button:hover{
+  padding:12px 16px;
+  border-radius:10px;
+  background:#fde508;
+  color:#000000;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-section{
+  text-align: center;
+}
+
