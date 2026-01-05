@@ -27,11 +27,13 @@
   color: #fff;
   text-decoration: none;
   font-size: x-large;
+  font-weight: 500;
 }
 
 .links a:hover {
   color: #fde508;
   text-decoration: underline;
+  font-weight: 700;
 }
 
 .links2 a:hover {
@@ -130,3 +132,20 @@ body{
   text-align: center;
 }
 
+/* Barre de navigation */
+
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+  background: #111;
+  text-align: center;
+}
+
+.logo1{
+  height: 80px;
+  width: auto;
+  display: block;
+}
