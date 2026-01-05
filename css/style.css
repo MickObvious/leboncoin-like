@@ -1,5 +1,5 @@
 
-
+/* Page index.html*/
 
 /* Barre de navigation */
 
@@ -132,20 +132,3 @@ body{
   text-align: center;
 }
 
-/* Barre de navigation */
-
-.foot{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 16px;
-  background: #111;
-  text-align: center;
-}
-
-.logo1{
-  height: 80px;
-  width: auto;
-  display: block;
-}

@@ -1,0 +1,53 @@
+
+
+/* Page connexion.html */
+
+
+
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+  background: #111;
+  text-align: center;
+}
+
+.logo1{
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+
+
+.pageco{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.id-client{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:30px 18px;
+}
+
+
+.sections-co{
+  width:100%;
+  max-width:460px;
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* séparateur/tiret dans la navbar */
+.sep{
+  color:#fff;
+  font-size: xx-large;
+}
