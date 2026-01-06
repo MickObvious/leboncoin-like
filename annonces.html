@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trok.fr</title>
+
+    <link rel="icon" href="assets/ico/trok.fr.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-connexion.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+
+    <nav class="nav">
+        <a href="index.html">
+            <img class="logo" src="assets/img/trok.fr(1)-Photoroom.png" alt="trok.fr">
+        </a>
+
+        <div class="links">
+            <a href="index.html">Accueil</a>
+            <a>-</a>
+            <a href="annonces.html">Annonces</a>
+        </div>
+
+        <div class="links2">
+            <a class="btn" href="connexion.html"><i class="fa-regular fa-id-badge"></i> Mon compte</a>
+            <a class="inscription" href="inscription.html">Pas encore inscrit, clique ici!</a>
+        </div>
+    </nav>
+
+    <div class="links2" id="zone-compte">
+        <!-- rempli par JS -->
+    </div>
+    </nav>
+
+    <main class="main">
+
+        <!-- bandeau -->
+        <section class="sections">
+            <h1>Annonces</h1>
+            <p>Trouve des annonces locales, ou dépose la tienne si tu es connecté.</p>
+
+            <h2>Trouver une annonce</h2>
+            <div class="barre-filtres">
+                <input class="champ" type="text" id="recherche"
+                    placeholder="Rechercher (ex : samsung s21, table, frigo, peugeot 5008 ...)">
+                <select class="champ" id="filtre-categorie">
+                    <option value="">Toutes catégories</option>
+                    <option value="Téléphone">Téléphone</option>
+                    <option value="Meubles">Meubles</option>
+                    <option value="Électroménager">Électroménager</option>
+                    <option value="Auto">Auto</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- déposer annonce (visible seulement connecté) -->
+        <section class="sections" id="zone-depot">
+            <h2>Déposer une annonce</h2>
+
+            <p class="message" id="message-annonce"></p>
+
+            <form id="form-annonce" class="formulaire">
+                <div class="ligne">
+                    <div class="bloc">
+                        <label for="titre">Titre</label>
+                        <input class="champ" id="titre" type="text" placeholder="ex : Téléphone samsung s21 en très bon état" required>
+                    </div>
+
+                    <div class="bloc">
+                        <label for="categorie">Catégorie</label>
+                        <select class="champ" id="categorie" required>
+                            <option value="">Choisir...</option>
+                            <option value="Téléphone">Téléphone</option>
+                            <option value="Meubles">Meubles</option>
+                            <option value="Électroménager">Électroménager</option>
+                            <option value="Auto">Auto</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ligne">
+                    <div class="bloc">
+                        <label for="prix">Prix (€)</label>
+                        <input class="champ" id="prix" type="number" min="0" step="1" placeholder="ex : 50" required>
+                    </div>
+
+                    <div class="bloc">
+                        <label for="ville">Ville</label>
+                        <input class="champ" id="ville" type="text" placeholder="ex : Evreux" required>
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <label for="photo">Photo (optionnel)</label>
+                    <input class="champ" id="photo" type="text" placeholder="ex : image.jpg">
+                </div>
+
+                <div class="bloc">
+                    <label for="description">Description</label>
+                    <br>
+                    <textarea class="champ" id="description" 
+                        placeholder="Décris l’objet (état...)" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Publier l’annonce</button>
+            </form>
+        </section>
+
+        <!-- si pas connecté -->
+        <section class="sections" id="zone-non-connecte" style="display:none;">
+            <h2>Tu veux déposer une annonce ?</h2>
+            <p>Connecte-toi ou crée un compte.</p>
+            <div class="actions">
+                <a class="btn" href="connexion.html">Connexion</a>
+                <a class="btn btn-secondaire" href="inscription.html">Inscription</a>
+            </div>
+        </section>
+
+        <!-- liste -->
+        <section class="sections">
+            <h2>Liste des annonces</h2>
+            <div class="grille-annonces" id="liste-annonces"></div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <div class="foot">
+        <a href="index.html">
+            <img class="logo1" src="assets/img/trok.fr(1)-Photoroom.png" alt="trok.fr">
+        </a>
+
+        <a href="https://github.com/MickObvious/leboncoin-like">
+            <img class="logo1" src="assets/img/OIP.webp" alt="github">
+        </a>
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/4c2621290e.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
