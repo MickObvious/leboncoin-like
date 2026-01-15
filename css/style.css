@@ -1,8 +1,20 @@
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Page index.html*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Barre de navigation */
-
 .nav {
   display: flex;
   align-items: center;
@@ -36,6 +48,17 @@
   font-weight: 700;
 }
 
+.links2 {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.links2 a {
+  font-size: medium;
+  font-weight: 400;
+}
+
 .links2 a:hover {
   text-decoration: underline;
 }
@@ -52,83 +75,160 @@
 .btn:hover {
   background: #fde508;
   color: #111;
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-weight: 600;
   text-decoration: none;
 }
 
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f3f3f3;
+/* Le main */
+.main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 0 18px;
+  width: 100%;
 }
 
-/* Le main  */
-
-.main{
-  max-width:1100px;
-  margin:25px auto;
-  padding:0 18px;
+/* Les sections */
+.sections {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Les sections  */
-
-.sections{
-  background:#fff;
-  border-radius:14px;
-  padding:22px;
-  margin-bottom:18px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-.sections h1, .sections h2{
-  margin-top:0;
+.sections h1,
+.sections h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 /* Avis */
-
-.avis{
-  display:flex;
-  gap:14px;
+.avis {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
 }
 
-.avis-client{
-  flex:1;
-  background:#fff;
-  border-radius:12px;
-  padding:14px;
+.avis-client {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
 }
 
-.avis-client p{
-  margin:0 0 10px;
+.avis-client p {
+  margin: 0 0 10px;
+  font-style: italic;
 }
 
-.avis-client span{
-  font-weight:600;
+.avis-client span {
+  font-weight: 600;
+  color: #555;
 }
 
-/* Connexion */
-
-.button{
-  padding:12px 16px;
-  border-radius:10px;
-  background:#111;
-  color:#fff;
-  cursor:pointer;
-  font-weight:600;
+/* Formulaires */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.button:hover{
-  padding:12px 16px;
-  border-radius:10px;
-  background:#fde508;
-  color:#000000;
-  cursor:pointer;
-  font-weight:600;
+form label {
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.btn-section{
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #fde508;
+}
+
+/* Boutons */
+.button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
 }
+
+.button:hover {
+  background: #fde508;
+  color: #000;
+}
+
+.btn-section {
+  text-align: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Footer */
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+.logo1 {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.foot p {
+  margin: 0;
+}
+
+
+
+
+
+
+/* Barre de sécurité du mot de passe (CSS) */
+#strength-bar {
+  height: 60px;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+#strength-bar div {
+  height: 100%;
+  width: 0%;
+}
+
+
+/* Messages d'erreur sous les champs */ .error { color: red; font-size: 13px; margin-top: -8px; margin-bottom: 4px; display: block; }
+
+/* Messages d'erreur sous les champs */ .error2 { color: red; font-size: 8px; margin-top: -8px; margin-bottom: 4px; display: block; }
+
 
